@@ -229,7 +229,7 @@ def main():
             cols = st.columns(4)
             for i, (step_name, step_image) in enumerate(steps):
                 with cols[i]:
-                    st.image(step_image, caption=step_name, use_column_width=True)
+                    st.image(step_image, caption=step_name, use_container_width=True)
             
             # Data Augmentation Examples
             st.markdown("### 🎲 Step 2: Data Augmentation Techniques")
@@ -242,7 +242,7 @@ def main():
             aug_cols = st.columns(5)
             for i, (aug_name, aug_image) in enumerate(augmentations):
                 with aug_cols[i]:
-                    st.image(aug_image, caption=aug_name, use_column_width=True)
+                    st.image(aug_image, caption=aug_name, use_container_width=True)
             
             # Technical details for both preprocessing and augmentation
             col1, col2 = st.columns(2)
